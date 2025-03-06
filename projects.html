@@ -76,6 +76,29 @@
         .project-box a:hover {
             background-color: #0056b3;
         }
+        .skills-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .dropdown {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px auto;
+            cursor: pointer;
+            width: 60%;
+        }
+        .dropdown-content {
+            display: none;
+            background: #444;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
         footer {
             margin-top: 20px;
             background: #111;
@@ -115,11 +138,22 @@
                 <p>Developed an MLOps pipeline for customer segmentation, improving campaign response rates by 15% and reducing marketing costs by 20%.</p>
                 <a href="https://github.com/sushumnaspradeep/Customer-Segmentation">View Project</a>
             </div>
-            <div class="project-box">
-                <h3>Stroke Prediction Model</h3>
-                <p>Developed a machine learning model using Decision Tree, Random Forest, and XGBoost, achieving a maximum accuracy of 95.8%.</p>
-                <a href="https://github.com/sushumnaspradeep/Stroke-prediction">View Project</a>
-            </div>
+        </div>
+    </section>
+    
+    <section class="skills-container">
+        <h2>Skills</h2>
+        <div class="dropdown">Technical Skills
+            <div class="dropdown-content">Python, Java, C++, SQL, JavaScript, TypeScript, Perl, C#</div>
+        </div>
+        <div class="dropdown">Machine Learning & AI
+            <div class="dropdown-content">Deep Learning, NLP, Neural Networks, Large Language Models, TensorFlow, PyTorch</div>
+        </div>
+        <div class="dropdown">Business Intelligence Tools
+            <div class="dropdown-content">Tableau, Power BI, Qlik Sense</div>
+        </div>
+        <div class="dropdown">Databases & DevOps
+            <div class="dropdown-content">MySQL, SQLite, AWS, MLOps, CI/CD Pipelines</div>
         </div>
     </section>
     
