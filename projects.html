@@ -51,10 +51,14 @@
         }
         .project-box {
             background-color: #333;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 250px;
         }
         .project-box:hover {
             transform: scale(1.05);
@@ -65,6 +69,7 @@
         }
         .project-box p {
             color: #bbb;
+            flex-grow: 1;
         }
         .project-box a {
             display: inline-block;
@@ -77,6 +82,29 @@
         }
         .project-box a:hover {
             background-color: #0056b3;
+        }
+        .skills-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .dropdown {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px auto;
+            cursor: pointer;
+            width: 60%;
+        }
+        .dropdown-content {
+            display: none;
+            background: #444;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         footer {
             margin-top: 20px;
@@ -109,8 +137,7 @@
             </div>
             <div class="project-box">
                 <h3>Investigating Word Embedding Techniques for Biomedical Research (Thesis)</h3>
-                <p>This project explores the functional relatedness between biomedical concepts such as genes, chemicals, and diseases, focusing on cancer-related research. Using word embeddings generated from PubMed abstracts, we aim to identify meaningful relationships among these entities. The study evaluates advanced word embedding models and their effectiveness in predicting biomedical associations. Our model successfully captured relatedness in 42 disease-chemical pairs, 58 disease-gene pairs, and 83 chemical-gene pairs from the CTD dataset.</p>
-                <p><strong>First draft submitted to AIME 2025.</strong></p>
+                <p>Explores biomedical relationships using word embeddings from PubMed abstracts. Evaluates multiple models for predicting associations among disease, gene, and chemical pairs. Submitted to AIME 2025.</p>
                 <a href="https://github.com/sushumnaspradeep/Investigating-Word-Embedding-Techniques-for-Extracting-Disease-Gene-and-Chemical-Relationships">View Project</a>
             </div>
             <div class="project-box">
@@ -120,9 +147,25 @@
             </div>
             <div class="project-box">
                 <h3>Stroke Prediction Model</h3>
-                <p>Developed a machine learning model using Decision Tree, Random Forest, and XGBoost, achieving a maximum accuracy of 95.8%. The model successfully identifies high-risk individuals to assist in early medical interventions.</p>
+                <p>Machine learning model using Decision Tree, Random Forest, and XGBoost, achieving 95.8% accuracy in predicting stroke risk for early intervention.</p>
                 <a href="https://github.com/sushumnaspradeep/Stroke-prediction">View Project</a>
             </div>
+        </div>
+    </section>
+    
+    <section class="skills-container">
+        <h2>Skills</h2>
+        <div class="dropdown">Technical Skills
+            <div class="dropdown-content">Python, Java, C++, SQL, JavaScript, TypeScript, Perl, C#</div>
+        </div>
+        <div class="dropdown">Machine Learning & AI
+            <div class="dropdown-content">Deep Learning, NLP, Neural Networks, Large Language Models, TensorFlow, PyTorch</div>
+        </div>
+        <div class="dropdown">Business Intelligence Tools
+            <div class="dropdown-content">Tableau, Power BI, Qlik Sense</div>
+        </div>
+        <div class="dropdown">Databases & DevOps
+            <div class="dropdown-content">MySQL, SQLite, AWS, MLOps, CI/CD Pipelines</div>
         </div>
     </section>
     
