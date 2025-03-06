@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Sushumna Pradeep</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-box {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-box:hover {
+            transform: scale(1.05);
+            background-color: #e3e3e3;
+        }
+        .project-box h3 {
+            color: #333;
+        }
+        .project-box p {
+            color: #666;
+        }
+        .project-box a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project-box a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,11 +59,28 @@
     
     <section>
         <h2>Academic & Professional Projects</h2>
-        <ul>
-            <li><b>Optimized Customer Segmentation</b> - Built an MLOps pipeline improving targeting efficiency.</li>
-            <li><b>Hand Gesture Recognition</b> - CNN-based ASL recognition model (94.75% accuracy).</li>
-            <li><b>Early Stroke Risk Prediction</b> - Machine learning model achieving 92% accuracy.</li>
-        </ul>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Hand Gesture Recognition using CNN</h3>
+                <p>Explored CNN architectures for ASL alphabets recognition, achieving 94.75% accuracy with batch normalization and Adam optimizer.</p>
+                <a href="https://github.com/sushumnaspradeep">View Project</a>
+            </div>
+            <div class="project-box">
+                <h3>Word Embedding for Biomedical Relationships</h3>
+                <p>Used word embeddings from PubMed abstracts to analyze disease-gene-chemical relationships in cancer research.</p>
+                <a href="https://github.com/sushumnaspradeep/Investigating-Word-Embedding-Techniques-for-Extracting-Disease-Gene-and-Chemical-Relationships">View Project</a>
+            </div>
+            <div class="project-box">
+                <h3>Customer Segmentation</h3>
+                <p>Developed an MLOps pipeline for customer segmentation, improving campaign response rates by 15% and reducing marketing costs by 20%.</p>
+                <a href="https://github.com/sushumnaspradeep/Customer-Segmentation">View Project</a>
+            </div>
+            <div class="project-box">
+                <h3>Stroke Prediction Model</h3>
+                <p>Developed a machine learning model using Decision Tree, Random Forest, and XGBoost, achieving a maximum accuracy of 95.8%.</p>
+                <a href="https://github.com/sushumnaspradeep/Stroke-prediction">View Project</a>
+            </div>
+        </div>
     </section>
     
     <footer>
