@@ -6,10 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Sushumna Pradeep</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1a1a1a, #2b2b2b, #3c3c3c);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .timeline-item {
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .timeline-item:hover {
+            transform: scale(1.05);
+            background: #444;
+        }
+        h2 {
+            color: #ddd;
+        }
+        footer {
+            margin-top: 20px;
+            background: #111;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Experience</h1>
+        <h1>Experience & Education</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,10 +63,34 @@
     
     <section>
         <h2>Professional Experience</h2>
-        <ul>
-            <li><b>Data Scientist - Outlier AI</b> (Mar 2024 - Present)</li>
-            <li><b>Software Engineer - E2open</b> (Sep 2021 - Jul 2022)</li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Data Scientist - Outlier AI</h3>
+                <p><i>Mar 2024 - Present</i></p>
+                <p>Refining AI-generated data science content, optimizing models, and improving data preprocessing techniques.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Software Engineer - E2open</h3>
+                <p><i>Sep 2021 - Jul 2022</i></p>
+                <p>Developed automated systems for supply chain operations, improving efficiency by 40%.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Master of Computer Science - Dalhousie University</h3>
+                <p><i>Sep 2022 - Sep 2024</i></p>
+                <p>Specialized in Machine Learning, Data Science, and AI.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Bachelor of Engineering in Computer Science - Global Academy of Technology</h3>
+                <p><i>Sep 2017 - Jul 2021</i></p>
+                <p>GPA: 8.5/10, with coursework in AI, Big Data, and Deep Learning.</p>
+            </div>
+        </div>
     </section>
     
     <footer>
