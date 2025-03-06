@@ -6,6 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushumna Pradeep - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1a1a1a, #2b2b2b, #3c3c3c);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            background: #333;
+        }
+        nav ul li a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+        .profile-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .about-text {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        footer {
+            margin-top: 20px;
+            background: #111;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,8 +90,12 @@
     
     <section>
         <h2>About Me</h2>
-        <img src="Profile.jpeg" alt="Sushumna Pradeep" class="profile-photo">
-        <p>Master's in Computer Science with expertise in Machine Learning, Data Science, and MLOps. Experienced in deploying AI models, data analysis, and software development.</p>
+        <div class="profile-container">
+            <img src="Profile.jpeg" alt="Sushumna Pradeep" class="profile-photo">
+            <div class="profile-name">Sushumna S Pradeep</div>
+        </div>
+        <p class="about-text">I am a passionate and dedicated Data Scientist with a strong foundation in Machine Learning, Artificial Intelligence, and MLOps. With a Master's degree in Computer Science and extensive hands-on experience, I specialize in developing and deploying AI-driven solutions that optimize business processes and enhance decision-making. My expertise includes data analysis, statistical modeling, and deep learning, with a keen interest in solving complex problems using AI.</p>
+        <p class="about-text">Throughout my career, I have worked on various projects, ranging from real-time sentiment analysis to predictive modeling for healthcare and finance. I have experience in both academic research and industry applications, leveraging cutting-edge technologies such as Python, TensorFlow, and cloud computing. I am always eager to learn new advancements in AI and contribute to innovative projects that make a meaningful impact.</p>
     </section>
     
     <footer>
