@@ -1,9 +1,10 @@
+<!-- experience.html (Experience Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Sushumna Pradeep</title>
+    <title>Experience - Sushumna Pradeep</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -40,53 +41,37 @@
             background: #555;
             transform: scale(1.1);
         }
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
         }
-        .project-box {
-            background-color: #333;
+        .timeline-item {
             padding: 20px;
-            border-radius: 8px;
+            background: #333;
+            border-radius: 10px;
+            margin: 20px 0;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 250px;
         }
-        .project-box:hover {
+        .timeline-item:hover {
             transform: scale(1.05);
-            background-color: #444;
+            background: #444;
         }
-        .project-box h3 {
+        h2 {
             color: #ddd;
         }
-        .project-box p {
-            color: #bbb;
-            flex-grow: 1;
-        }
-        .project-box a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .project-box a:hover {
-            background-color: #0056b3;
+        footer {
+            margin-top: 20px;
+            background: #111;
+            padding: 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Projects</h1>
+        <h1>Experience & Education</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -96,50 +81,46 @@
             </ul>
         </nav>
     </header>
-    
+
     <section>
-        <h2>Academic & Professional Projects</h2>
-        <div class="projects-container">
-            <div class="project-box">
-                <h3>Hand Gesture Recognition using CNN</h3>
-                <p>Explored CNN architectures for ASL alphabets recognition, achieving 94.75% accuracy with batch normalization and Adam optimizer.</p>
-                <a href="https://github.com/sushumnaspradeep">View Project</a>
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Data Scientist - Outlier AI</h3>
+                <p><i>Mar 2024 - Present</i></p>
+                <p>Refining AI-generated data science content, optimizing models, and improving data preprocessing techniques.</p>
             </div>
-            <div class="project-box">
-                <h3>Investigating Word Embedding Techniques for Biomedical Research (Thesis)</h3>
-                <p>Explores biomedical relationships using word embeddings from PubMed abstracts. Evaluates multiple models for predicting associations among disease, gene, and chemical pairs. Submitted to AIME 2025.</p>
-                <a href="https://github.com/sushumnaspradeep/Investigating-Word-Embedding-Techniques-for-Extracting-Disease-Gene-and-Chemical-Relationships">View Project</a>
+            <div class="timeline-item">
+                <h3>Teaching Assistant / Marker - Dalhousie University</h3>
+                <p><i>Jan 2024 - Dec 2024</i></p>
+                <p>Assisted in courses including Data Mining & Data Warehousing, Workplace Communication, and Software Engineering. Provided grading, mentorship, and academic support to students.</p>
             </div>
-            <div class="project-box">
-                <h3>AI PDF Summary</h3>
-                <p>AI-powered tool that summarizes PDF documents in 100 words or less. Supports OCR for scanned documents, uses BART, T5, Pegasus models, and has FastAPI & Streamlit integration.</p>
-                <a href="https://github.com/sushumnaspradeep/AI_pdf_summary">View Project</a>
-            </div>
-            <div class="project-box">
-                <h3>Personal Expense Tracker</h3>
-                <p>A web application to track daily expenses, categorize transactions, and provide financial insights with interactive dashboards.</p>
-                <a href="https://github.com/sushumnaspradeep/personal-expense-tracker">View Project</a>
-            </div>
-            <div class="project-box">
-                <h3>Learning Management System (LMS) App</h3>
-                <p>A Spring Boot-based LMS platform for managing and delivering educational content. Features course management, user registration, progress tracking, and CI/CD support.</p>
-                <a href="https://github.com/sushumnaspradeep/lms-app">View Project</a>
-            </div>
-            <div class="project-box">
-                <h3>Customer Segmentation</h3>
-                <p>Developed an MLOps pipeline for customer segmentation, improving campaign response rates by 15% and reducing marketing costs by 20%.</p>
-                <a href="https://github.com/sushumnaspradeep/Customer-Segmentation">View Project</a>
-            </div>
-            <div class="project-box">
-                <h3>Stroke Prediction Model</h3>
-                <p>Machine learning model using Decision Tree, Random Forest, and XGBoost, achieving 95.8% accuracy in predicting stroke risk for early intervention.</p>
-                <a href="https://github.com/sushumnaspradeep/Stroke-prediction">View Project</a>
+            <div class="timeline-item">
+                <h3>Software Engineer - E2open</h3>
+                <p><i>Sep 2021 - Jul 2022</i></p>
+                <p>Developed automated systems for supply chain operations, improving efficiency by 40%. Implemented QlikSense for data visualization and preprocessing, reducing analysis time by 25% and enhancing data-driven decision-making.</p>
             </div>
         </div>
     </section>
-    
+
+    <section>
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Master of Computer Science - Dalhousie University</h3>
+                <p><i>Sep 2022 - Sep 2024</i></p>
+                <p>GPA: 4.0/4.3 | Specialized in Machine Learning, Data Science, and AI.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Bachelor of Engineering in Computer Science - Global Academy of Technology</h3>
+                <p><i>Sep 2017 - Jul 2021</i></p>
+                <p>GPA: 8.5/10 | Coursework in AI, Big Data, Deep Learning, Full Stack Development, and Software Engineering.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>Visit my <a href="https://github.com/sushumnaspradeep">GitHub</a> for full project details.</p>
+        <p>Visit my <a href="https://www.linkedin.com/in/sushumna-pradeep">LinkedIn</a> for details.</p>
     </footer>
 </body>
 </html>
